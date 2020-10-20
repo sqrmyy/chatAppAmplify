@@ -1,0 +1,26 @@
+type Room @model {
+  id: ID!
+  title: String!
+  avatar: String!
+  messages: [Message]
+    @connection(name: "RoomMessages", keyField: "roomId", sortField: "when")
+}
+
+type Message
+  @model
+  @auth(
+    rules: [
+      {
+        allow: owner
+        ownerField: "owner"
+        operations: [create, update, delete]
+      }
+    ]
+  ) {
+  id: ID!
+  content: String!
+  when: String!
+  roomId: ID
+  owner: String
+  room: Room @connection(name: "RoomMessages", keyField: "roomId")
+}

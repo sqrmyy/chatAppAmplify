@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-chatappamplify-dev-210136-authRole",
+      "UnauthRoleArn": "arn:aws:iam::147008210577:role/amplify-chatappamplify-dev-210136-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::147008210577:role/amplify-chatappamplify-dev-210136-authRole",
+      "Region": "ap-northeast-1",
+      "DeploymentBucketName": "amplify-chatappamplify-dev-210136-deployment",
+      "UnauthRoleName": "amplify-chatappamplify-dev-210136-unauthRole",
+      "StackName": "amplify-chatappamplify-dev-210136",
+      "StackId": "arn:aws:cloudformation:ap-northeast-1:147008210577:stack/amplify-chatappamplify-dev-210136/01fae3e0-12cc-11eb-91da-0677f4f3181e",
+      "AmplifyAppId": "d2xwnsngqtyq1o"
+    },
+    "categories": {
+      "auth": {
+        "chatappamplify18153660": {}
+      }
+    }
+  }
+}
